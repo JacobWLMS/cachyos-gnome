@@ -48,11 +48,12 @@ if [[ ! -f "$SCRIPT_DIR/packages-repo.txt" ]]; then
     exit 1
 fi
 
-echo -e "   ${DIM}$(wc -l < "$SCRIPT_DIR/packages-repo.txt") packages from official repos${NC}"
+echo -e "   ${DIM}$(grep -cv '^#\|^$' "$SCRIPT_DIR/packages-repo.txt") packages from official repos${NC}"
 if ask "Install repo packages?"; then
     # Filter out already-installed packages
     to_install=()
     while IFS= read -r pkg; do
+        [[ -z "$pkg" || "$pkg" == \#* ]] && continue
         pacman -Qq "$pkg" &>/dev/null || to_install+=("$pkg")
     done < "$SCRIPT_DIR/packages-repo.txt"
 
@@ -72,7 +73,7 @@ if [[ ! -f "$SCRIPT_DIR/packages-aur.txt" ]]; then
     exit 1
 fi
 
-echo -e "   ${DIM}$(wc -l < "$SCRIPT_DIR/packages-aur.txt") packages from AUR${NC}"
+echo -e "   ${DIM}$(grep -cv '^#\|^$' "$SCRIPT_DIR/packages-aur.txt") packages from AUR${NC}"
 
 # Ensure paru is available
 if ! command -v paru &>/dev/null; then
@@ -83,6 +84,7 @@ fi
 if ask "Install AUR packages?"; then
     to_install=()
     while IFS= read -r pkg; do
+        [[ -z "$pkg" || "$pkg" == \#* ]] && continue
         pacman -Qq "$pkg" &>/dev/null || to_install+=("$pkg")
     done < "$SCRIPT_DIR/packages-aur.txt"
 
