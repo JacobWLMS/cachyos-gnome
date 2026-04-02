@@ -1,0 +1,48 @@
+{
+   "$schema": "https://vicinae.com/schemas/config.json",
+
+   "search_files_in_root": false,
+   "escape_key_behavior": "close_window",
+   "pop_on_backspace": false,
+   "close_on_focus_loss": true,
+   "pop_to_root_on_close": true,
+
+   "favorites": [],
+   "fallbacks": [],
+
+   "theme": {
+      "light": {
+         "name": "vicinae-light",
+         "icon_theme": "auto"
+      },
+      "dark": {
+         "name": "vicinae-dark",
+         "icon_theme": "auto"
+      }
+   },
+
+   "launcher_window": {
+      "opacity": 1.0,
+      "blur": {
+         "enabled": false
+      },
+      "dim_around": false,
+      "compact_mode": {
+         "enabled": true
+      },
+      "layer_shell": {
+         "enabled": true,
+         "keyboard_interactivity": "exclusive",
+         "layer": "top"
+      }
+   },
+
+   "providers": {
+      "clipboard": {
+         "enabled": false
+      },
+      "calculator": {
+         "enabled": false
+      }
+   }
+}

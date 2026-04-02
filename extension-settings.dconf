@@ -1,0 +1,121 @@
+[all-in-one-clipboard]
+default-tab='Clipboard'
+enable-recents-tab=true
+hide-panel-icon=true
+shortcut-menu-position='center'
+shortcut-open-clipboard=['<Super><Shift>v']
+
+[blur-my-shell]
+pipelines={'pipeline_default': {'name': <'Default'>, 'effects': <[<{'type': <'native_static_gaussian_blur'>, 'id': <'effect_000000000000'>, 'params': <{'radius': <30>, 'brightness': <0.20000000000000001>}>}>, <{'type': <'corner'>, 'id': <'effect_78660596969030'>, 'params': <@a{sv} {}>}>]>}, 'pipeline_default_rounded': {'name': <'Default rounded'>, 'effects': <[<{'type': <'native_static_gaussian_blur'>, 'id': <'effect_000000000001'>, 'params': <{'radius': <30>, 'brightness': <0.20000000000000001>}>}>, <{'type': <'corner'>, 'id': <'effect_000000000002'>, 'params': <{'radius': <24>}>}>]>}}
+settings-version=2
+
+[blur-my-shell/appfolder]
+brightness=0.59999999999999998
+sigma=30
+
+[blur-my-shell/coverflow-alt-tab]
+pipeline='pipeline_default'
+
+[blur-my-shell/dash-to-dock]
+blur=true
+brightness=0.59999999999999998
+pipeline='pipeline_default_rounded'
+sigma=30
+static-blur=true
+style-dash-to-dock=0
+
+[blur-my-shell/lockscreen]
+pipeline='pipeline_default'
+
+[blur-my-shell/overview]
+pipeline='pipeline_default'
+
+[blur-my-shell/panel]
+brightness=0.59999999999999998
+pipeline='pipeline_default'
+sigma=30
+
+[blur-my-shell/screenshot]
+pipeline='pipeline_default'
+
+[blur-my-shell/window-list]
+brightness=0.59999999999999998
+sigma=30
+
+[caffeine]
+cli-toggle=false
+indicator-position-max=2
+
+[gamemodeshellextension]
+show-icon-only-when-active=true
+show-launch-notification=false
+
+[paperwm]
+cycle-width-steps=[0.33333000000000002, 0.5, 0.66666999999999998]
+default-focus-mode=0
+horizontal-margin=4
+last-used-display-server='Wayland'
+maximize-within-tiling=true
+restore-attach-modal-dialogs='true'
+restore-edge-tiling='true'
+restore-keybinds='{"toggle-tiled-left":{"bind":"[\\"<Super>Left\\"]","schema_id":"org.gnome.mutter.keybindings"},"toggle-tiled-right":{"bind":"[\\"<Super>Right\\"]","schema_id":"org.gnome.mutter.keybindings"},"cancel-input-capture":{"bind":"[\\"<Super><Shift>Escape\\"]","schema_id":"org.gnome.mutter.keybindings"},"restore-shortcuts":{"bind":"[\\"<Super>Escape\\"]","schema_id":"org.gnome.mutter.wayland.keybindings"},"switch-to-workspace-last":{"bind":"[\\"<Super>End\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"switch-panels":{"bind":"[\\"<Control><Alt>Tab\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"switch-group-backward":{"bind":"[\\"<Shift><Super>Above_Tab\\",\\"<Shift><Alt>Above_Tab\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"unmaximize":{"bind":"[\\"<Super>Down\\",\\"<Alt>F5\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"switch-to-workspace-1":{"bind":"[\\"<Super>Home\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"switch-to-workspace-left":{"bind":"[\\"<Super>Page_Up\\",\\"<Super>KP_Prior\\",\\"<Super><Alt>Left\\",\\"<Control><Alt>Left\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"switch-group":{"bind":"[\\"<Super>Above_Tab\\",\\"<Alt>Above_Tab\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"move-to-workspace-left":{"bind":"[\\"<Super><Shift>Page_Up\\",\\"<Super><Shift>KP_Prior\\",\\"<Super><Shift><Alt>Left\\",\\"<Control><Shift><Alt>Left\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"move-to-workspace-right":{"bind":"[\\"<Super><Shift>Page_Down\\",\\"<Super><Shift>KP_Next\\",\\"<Super><Shift><Alt>Right\\",\\"<Control><Shift><Alt>Right\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"switch-panels-backward":{"bind":"[\\"<Shift><Control><Alt>Tab\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"move-to-monitor-left":{"bind":"[\\"<Super><Shift>Left\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"move-to-workspace-up":{"bind":"[\\"<Control><Shift><Alt>Up\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"switch-to-workspace-right":{"bind":"[\\"<Super>Page_Down\\",\\"<Super>KP_Next\\",\\"<Super><Alt>Right\\",\\"<Control><Alt>Right\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"move-to-monitor-down":{"bind":"[\\"<Super><Shift>Down\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"move-to-workspace-down":{"bind":"[\\"<Control><Shift><Alt>Down\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"move-to-monitor-right":{"bind":"[\\"<Super><Shift>Right\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"switch-applications":{"bind":"[\\"<Super>Tab\\",\\"<Alt>Tab\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"move-to-monitor-up":{"bind":"[\\"<Super><Shift>Up\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"maximize":{"bind":"[\\"<Super>Up\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"switch-applications-backward":{"bind":"[\\"<Shift><Super>Tab\\",\\"<Shift><Alt>Tab\\"]","schema_id":"org.gnome.desktop.wm.keybindings"},"shift-overview-up":{"bind":"[\\"<Super><Alt>Up\\"]","schema_id":"org.gnome.shell.keybindings"},"toggle-overview":{"bind":"[\\"<Super>Tab\\"]","schema_id":"org.gnome.shell.keybindings"},"shift-overview-down":{"bind":"[\\"<Super><Alt>Down\\"]","schema_id":"org.gnome.shell.keybindings"},"focus-active-notification":{"bind":"[\\"<Super>n\\"]","schema_id":"org.gnome.shell.keybindings"},"toggle-message-tray":{"bind":"[\\"<Super>v\\",\\"<Super>m\\"]","schema_id":"org.gnome.shell.keybindings"},"screensaver":{"bind":"[\\"<Super>l\\"]","schema_id":"org.gnome.settings-daemon.plugins.media-keys"}}'
+restore-workspaces-only-on-primary='true'
+selection-border-radius-top=0
+selection-border-size=2
+show-window-position-bar=true
+show-workspace-indicator=false
+vertical-margin=4
+vertical-margin-bottom=4
+window-gap=4
+winprops=['{ "wm_class": "vicinae", "scratch_layer": true }']
+
+[paperwm/keybindings]
+barf-out=['<Super>bracketright']
+center-horizontally=['<Super>c']
+close-window=['<Super>q']
+cycle-width=['<Super>r']
+cycle-width-backwards=['<Super><Shift>r']
+move-down=['<Super><Shift>j', '<Super><Shift>Down']
+move-down-workspace=['<Super><Shift>u', '<Super><Shift>Page_Down']
+move-left=['<Super><Shift>h', '<Super><Shift>Left']
+move-monitor-above=['<Super><Control><Shift>k']
+move-monitor-below=['<Super><Control><Shift>j']
+move-monitor-left=['<Super><Control><Shift>h', '<Super><Control><Shift>Left']
+move-monitor-right=['<Super><Control><Shift>l', '<Super><Control><Shift>Right']
+move-right=['<Super><Shift>l', '<Super><Shift>Right']
+move-up=['<Super><Shift>k', '<Super><Shift>Up']
+move-up-workspace=['<Super><Shift>i', '<Super><Shift>Page_Up']
+paper-toggle-fullscreen=['<Super><Shift>f']
+slurp-in=['<Super>bracketleft']
+switch-down=['<Super>j', '<Super>Down']
+switch-down-workspace=['<Super>u', '<Super>Page_Down']
+switch-left=['<Super>h', '<Super>Left']
+switch-monitor-above=['<Super><Control>k']
+switch-monitor-below=['<Super><Control>j']
+switch-monitor-left=['<Super><Control>h', '<Super><Control>Left']
+switch-monitor-right=['<Super><Control>l', '<Super><Control>Right']
+switch-right=['<Super>l', '<Super>Right']
+switch-up=['<Super>k', '<Super>Up']
+switch-up-workspace=['<Super>i', '<Super>Page_Up']
+toggle-maximize-width=['<Super>f']
+
+[paperwm/workspaces]
+list=['b60cc36c-4589-4c9f-b958-aa3057d97f5d', '72a2c4be-e154-4ca6-8e90-15492afe3995', 'e1d7808c-6011-4f8f-a010-7b70ca36358e']
+
+[paperwm/workspaces/72a2c4be-e154-4ca6-8e90-15492afe3995]
+color='rgb(53,132,228)'
+index=1
+
+[paperwm/workspaces/b60cc36c-4589-4c9f-b958-aa3057d97f5d]
+background=''
+color='rgb(53,132,228)'
+index=0
+
+[paperwm/workspaces/e1d7808c-6011-4f8f-a010-7b70ca36358e]
+index=2
+
+[rounded-window-corners-reborn]
+settings-version=uint32 8
+
+[vicinae]
+show-status-indicator=false
